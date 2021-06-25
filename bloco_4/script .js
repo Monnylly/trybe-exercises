@@ -68,30 +68,46 @@ if (angulo1 + angulo2 + angulo3 == 180){
 //7 nao consegui fazer
 
 let nota= 95;
-let portentagem = (nota *100)/100;
+//let porcentagem = (nota *100)/100;
 
-switch (porcentagem) {
-  case "porcentagem >= 90":
+if (nota >=90){
   console.log("A");
-  break;
-case "porcentagem >= 80":
+}else if (nota >=80){
   console.log("B");
-  break;
-case "porcentagem >= 70"":
+}else if(nota >=70){
   console.log("C");
-  break;
-case "porcentagem >= 60":
+}else if (nota >=60){
   console.log("D");
-  break;
-case "porcentagem >= 50":
+}else if(nota >=50){
   console.log("E");
-  break;
-case "porcentagem < 50":
+}else if(nota <50){
   console.log("F");
-  break;
-default:
-  console.log("erro");
+}else{
+  console.log("ERRO")
 }
+
+//switch (porcentagem) {
+//  case "porcentagem >= 90":
+//  console.log("A");
+//  break;
+//case "porcentagem >= 80":
+///  console.log("B");
+ // break;
+//case "porcentagem >= 70"":
+ // console.log("C");
+  //break;
+//case "porcentagem >= 60":
+ // console.log("D");
+  //break;
+//case "porcentagem >= 50":
+ // console.log("E");
+  //break;
+//case "porcentagem < 50":
+//  console.log("F");
+ // break;
+///default:
+  //console.log("erro");
+//}
 
 //8
 let n1 = 5;
