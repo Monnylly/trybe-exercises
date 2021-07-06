@@ -61,11 +61,11 @@ novaTag.appendChild(listaNaoOrdem);
 
 let listaNumeros = document.querySelector('.nova-lista');
 
-for(let index = 0; index <lista.length; index +=1){
+for(let index = 0; index < lista.length; index +=1){
   let numeros = lista[index];
 
   let listaNumerosLista = document.createElement('li');
-  listaNumeros.innerText = numeros;
+  listaNumerosLista.innerText = numeros;
 
 listaNumeros.appendChild(listaNumerosLista);
 }
