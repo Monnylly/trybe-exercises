@@ -13,7 +13,6 @@ body {
   background-color: #5C687C;
   display: flex;
   flex-direction: row;
-  border: red solid 2px;
   flex: 1 auto;
   justify-content: space-evenly;
   
@@ -22,28 +21,24 @@ body {
 .logo-container {
   display: flex;
   justify-content: center;
-  border: solid 3px red;
-  order: -1;
-  width: 268px;
-  flex-grow: 1;
+  flex-basis: 268px;
 }
 
 .menu-container {
   display: flex;
-  width: 500px;
+  flex-basis: 500px;
   flex-grow: 1;
+  order: 1;
 }
 
 .menu-container ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  border: red solid 2px;
   flex: 1 auto;
-}
-.header-container .menu-container ul li{
   align-self: center;
 }
+
 
 .menu-container li {
   color: white;
@@ -52,17 +47,16 @@ body {
   list-style: none;
   margin-right: 10px;
 }
-
-.main-container {
+.main-container{
   display: flex;
-  flex-flow: row;
-  width: 99%;
+  flex-wrap: wrap;
 }
 
 .movie-container {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  flex-basis: 700px;
+  flex-grow: 10;
 }
 
 .movie-container h2 {
@@ -72,8 +66,8 @@ body {
 
 .card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;  
 }
 
 .card-container div {
@@ -84,18 +78,17 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
-  flex-shrink: 1;
+  flex-basis: 16%;
+  flex-grow: 1;
 }
 
 .aside-container {
   display: flex;
   flex-direction: column;
+  margin: 20px;
   flex-basis: 350px;
   flex-grow: 1;
-  text-align: center;
-  align-content: flex-end;
-  margin-top: 120px;
-
+  align-self: center;  
 }
 
 .aside-container h3, h4 {
